@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+
+
+  
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Manvir's projects</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<header>
+  <h1>Manvir's Projects</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">home</a></li>
+  <li>|</li>
+  <li><a href="aboutme.html">About me</a></li>
+  <li>|</li>
+  <li><a href="teachablemachine.js">teachable ai</a></li>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  </head>
+  <body>
+    <div id="message"></div>
+    <script src="model.js"></script>
+    <script>
+      async function run() {
+        const model = await tf.loadLayersModel('model.json');
+        const prediction = model.predict(tf.ones([1, 28, 28, 1]))
+        document.querySelector('#message').innerHTML = 
+          'Model prediction: ' + prediction;
+      }
+      run();
+    </script>
+  </body>
+</html>
+
+  </ul>
+</nav>
+  </header>
+  <div id="project-container">
+  <!-- start of project template -->
+    <div class="project" id="pacman">
+
+    <h2>Pacman scratch game</h2>
+    <img src="img/scratch pacman project.png">
+<p><a href="https://scratch.mit.edu/projects/570804852">Pacman game</a></p>
+    <p>This is my scratch project and the goal was to make a game of pacman with the roles reversed so the ghost is the player. I accomplished this by using variables to track the score and editing a pacman sprite to fit into the game. The hard part was the ghosts being weird and bugging through walls sometimes.I learned how to stop the sprite from going in a certain direction.</p>
+    <div class="clear"> </div>
+  </div>
+   <!-- end of project template -->
+    <div class="project" id="snap">
+
+    <h3>snap drawing</h3>
+    <img src="img/snap drawing.png">
+
+    <p>This is my snap project and the goal here was to make this spiral type thing with one script using things like variables. I accomplished this by using the for block and a variable. The challenge was getting the for block to work and this project taught me how to better use the for block.
+
+</p>
+  <div class="clear"> </div>
+    </div>
+<div class="project" id="robot">
+
+    <h4>snap drawing</h4>
+    <img src="img/robot.png">
+<p><a href="">robot video</a></p>
+    <p>This is one of the projects me and Alex worked on last year and the goal was to make a fully autonomous robot. We accomplished it by coding the robot to move forwards until its sensor got too close to something in which case the robot would back up. The challenge was getting it to move straight because one of the motors was running slower than the other one so we had to compensate by changing the code. I learned how to code a fully autonomous robot.
+
+</p>
+  <div class="clear"> </div>
+</div>
+  </div id="project-container">
+</nav>
+
+
+  
+</body>
+
+</html>
